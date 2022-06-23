@@ -25,10 +25,10 @@ remota de código, y inyección código malicioso
     
    Tras ejecutarlo se abrirá una ventana emergente indicando si es vulnerable
    
-Vulnerable:  
+**Vulnerable:  **
 
 ![image](https://user-images.githubusercontent.com/93614373/175272782-6c8d35cb-a6fd-4713-a97a-6efdd708f43f.png)
 
-No vulnerable:
+**No vulnerable:**
 
 ![image](https://user-images.githubusercontent.com/93614373/175272988-f98c1e97-f344-41fd-ae2a-4c0c23722489.png)
