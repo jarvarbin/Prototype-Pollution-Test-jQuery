@@ -1,4 +1,5 @@
 # POLLUTED PROTOTYPE IN JQUERY
+![Esta es una imagen](https://1.bp.blogspot.com/-OyKrIuQlH0s/VyAKTW2fvfI/AAAAAAAAWGQ/PthNgy1c3sYgGfFq7UJoSrKoSqTAALnJwCLcB/s1600/Jar%2BJar%2BBinks%2BSith.jpg)
 
 **¿Qué es Polluted Prototype?**
 
@@ -19,7 +20,8 @@ remota de código, y inyección código malicioso
 
 - Abrir la consola del navegador sobre la web que queremos comprobar
 - Ejecutar el siguiente comando:
-    var pollutedtest = '{ "propiedadejemplo" : "a", "__proto__" : { "isVulnerable" : true } }'; var testObject = jQuery.extend(true, {}, JSON.parse(pollutedtest )); if (typeof {}.isVulnerable !== 'undefined' && {}.isVulnerable === true) { alert("Vulnerable 🚨 :(\na polluted prototype") } else { alert("Nice! :)\nprotegido ante Prototype Pollution") }
+
+   > var pollutedtest = '{ "propiedadejemplo" : "a", "__proto__" : { "isVulnerable" : true } }'; var testObject = jQuery.extend(true, {}, JSON.parse(pollutedtest )); if (typeof {}.isVulnerable !== 'undefined' && {}.isVulnerable === true) { alert("Vulnerable 🚨 :(\na polluted prototype") } else { alert("Nice! :)\nprotegido ante Prototype Pollution") }
     
    Tras ejecutarlo se abrirá una ventana emergente indicando si es vulnerable
    
