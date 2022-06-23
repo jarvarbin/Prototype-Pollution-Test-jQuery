@@ -23,7 +23,7 @@ remota de código, y inyección código malicioso
 
    > var pollutedtest = '{ "propiedadejemplo" : "a", "__proto__" : { "isVulnerable" : true } }'; var testObject = jQuery.extend(true, {}, JSON.parse(pollutedtest )); if (typeof {}.isVulnerable !== 'undefined' && {}.isVulnerable === true) { alert("Vulnerable 🚨 :(\na polluted prototype") } else { alert("Nice! :)\nprotegido ante Prototype Pollution") }
     
-   Tras ejecutarlo se abrirá una ventana emergente indicando si es vulnerable
+- Tras ejecutarlo se abrirá una ventana emergente indicando si es vulnerable
    
 **Vulnerable:**
 
