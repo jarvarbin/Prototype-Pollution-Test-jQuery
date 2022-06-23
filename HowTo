@@ -1,6 +1,6 @@
+# POLLUTED PROTOTYPE IN JQUERY
 
-
-¿Qué es Polluted Prototype?
+**¿Qué es Polluted Prototype?**
 
 Primeramente, la vulnerabilidad por contaminación de prototipo, se refiere a la capacidad 
 de inyectar propiedades en prototipos de construcciones de lenguaje JavaScript existentes, 
@@ -15,7 +15,7 @@ realizar ataques como la inserción de propiedades en el código JavaScript de l
 ataques de denegación de servicio, la activación de excepciones de JavaScript, la ejecución 
 remota de código, y inyección código malicioso
 
-¿Cómo comprobarlo?
+**¿Cómo comprobarlo?**
 
 - Abrir la consola del navegador sobre la web que queremos comprobar
 - Ejecutar el siguiente comando:
