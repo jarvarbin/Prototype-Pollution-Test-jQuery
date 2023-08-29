@@ -79,3 +79,48 @@ Con la comprensión adecuada y las contramedidas en su lugar, es posible mitigar
 **No vulnerable:**
 
 ![image](https://user-images.githubusercontent.com/93614373/175272988-f98c1e97-f344-41fd-ae2a-4c0c23722489.png)
+
+
+# What is Prototype Pollution Vulnerability?
+
+The Prototype Pollution vulnerability, also known as "Prototype Pollution," is a class of vulnerability that manifests itself in the JavaScript programming environment. This vulnerability arises due to the dynamic nature of JavaScript, allowing developers to modify object prototypes during program execution.
+
+## 🏷️ Fundamental Concepts
+
+- **Prototype**: In JavaScript, each object has a special property called a prototype. Prototypes enable objects to inherit methods and properties from other objects. This inheritance mechanism is the essence of JavaScript's prototype-based object model.
+
+- **Pollution**: The term refers to the act of adding or modifying properties in an object's prototype.
+
+## 🛠️ How Does It Occur?
+
+When functions like `merge`, `extend`, `clone`, or any operation involving deep object copying do not adequately validate the properties that are added or modified, an attacker can insert malicious properties into an object's prototype.
+
+## 🌐 Impact on the Application
+
+1. **Behaviour Alteration**: By modifying a property in an object's prototype, this change propagates to all objects inheriting from that prototype, potentially altering the behaviour of the entire application.
+
+2. **Malicious Code Injection**: Attackers may exploit this to inject malicious code that could be executed in the application context.
+
+3. **Denial of Service (DoS)**: A successful attack could trigger unhandled exceptions, possibly leading to an application-wide failure.
+
+4. **Remote Code Execution**: In extreme cases, the vulnerability could be exploited to execute arbitrary code, compromising the application's security.
+
+## 🛡️ Mitigation
+
+- Validate all inputs that might modify objects or their prototypes.
+- Use libraries that are designed to prevent this type of vulnerability.
+- Keep all project dependencies up to date to benefit from the latest security patches.
+
+## 🚨 Warning
+
+Exploiting the Prototype Pollution vulnerability can have serious implications for the integrity and security of a web application. Therefore, it is crucial to fully understand this risk and take appropriate preventive measures.
+
+With adequate understanding and countermeasures in place, it's possible to mitigate the risks associated with prototype pollution and strengthen the security of JavaScript-based applications.
+
+**How to Check?**
+
+- Open the browser console on the website you want to check.
+- Run the following command:
+
+  ```javascript
+  var pollutedtest = '{ "exampleproperty" : "a", "__proto__" : { "isVulnerable" : true } }'; var testObject = jQuery.extend(true, {}, JSON.parse(pollutedtest )); if (typeof {}.isVulnerable !== 'undefined' && {}.isVulnerable === true) { alert("Vulnerable 🚨 :(\nA polluted prototype") } else { alert("Nice! :)\nProtected against Prototype Pollution") }
