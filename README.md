@@ -1,6 +1,32 @@
 # POLLUTED PROTOTYPE IN JQUERY
-![Esta es una imagen](https://1.bp.blogspot.com/-OyKrIuQlH0s/VyAKTW2fvfI/AAAAAAAAWGQ/PthNgy1c3sYgGfFq7UJoSrKoSqTAALnJwCLcB/s1600/Jar%2BJar%2BBinks%2BSith.jpg)
-
+```
+          _.-*'""'*-._
+       .-"            "-.
+     ,"                  ",
+   .'      _.-.--.-._      ',
+  /     .-'.-"    "-.'-.     \
+ /     /  /"'-.  .-'"\  \     \
+:     :  :     ;:     ;  ;     ;
+;     :  ; *   !! *   :  ;     :
+;      ; :   .'  '.   ; :      :
+:       \ \-'      '-/ /       ;
+ \       '.'-_    _-'.'       /
+  \        '*-"-+"-*'        /
+   '.          /|          .'
+     *,       / |        ,*
+     / '-_            _-'  \
+    /     "*-.____.-*"      \
+   /            |            \
+  :    :        |        ;    ;
+  |.--.;        |        :.--.|
+  (   ()        |        ()   )
+   '--^_        |        _^--'
+      | "'*--.._I_..--*'" |
+      | __..._  | _..._   |
+     .'"      `"'"     ''"'.
+     """""""""""""""""""""""
+       POLLUTED PROTOTYPE
+```
 # ¿Qué es la Vulnerabilidad por Contaminación de Prototipo (Polluted Prototype)?
 
 La vulnerabilidad por Contaminación de Prototipo, también conocida como "Prototype Pollution," es una clase de vulnerabilidad que se manifiesta en el entorno de programación de JavaScript. Esta vulnerabilidad surge debido a la naturaleza dinámica de JavaScript, que permite a los desarrolladores modificar prototipos de objetos durante la ejecución del programa.
